@@ -3,6 +3,7 @@
 
 <h2>Tecnologías usadas</h2>
 <ul>
+<li>React Js</li>
 <li>Html5</li>
 <li>CSS3</li>
 <li>Bootstrap</li>
