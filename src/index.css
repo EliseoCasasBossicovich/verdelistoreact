@@ -11,3 +11,121 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* header */
+.header{
+  background-image: url(./components/recursos/portada.jpg);
+background-position: top;
+  background-size: contain;
+}
+.header__nav{
+  height: 65px;
+  background-color: white;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  }
+.header__cont{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.header__lista--logo{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.header__pedidos{
+  display: flex;
+  justify-content: end;
+}
+.header__pedidos--ico{
+  width: 43px;
+  height: 45px;
+}
+.header__collapse{
+  flex-direction: row-reverse;
+}
+.header__buscar{
+  width: 50vw;    
+}
+.header__buscar--boton{
+  /* border: $color-principal solid 1px; */
+  color: white;
+  background-color: rgb(1, 146, 1);
+  font-weight: 600;
+}
+.header__categoria--font{
+  color: black;
+}
+/* grid index */
+
+.categorias__grid{
+  display: grid;
+  margin-top: 0.938rem;
+  width: 99vw;
+  height: 60vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 0.938rem;
+  column-gap: 0.938rem;
+}
+.categorias__boton{
+  width: 8.125rem;
+  height: 3.125rem;
+  background-color: rgba(42, 165, 4, 0.719);
+  border: rgba(42, 165, 4, 0.719)  0.625rem ;
+  border-radius: 0.938rem;
+  font-size: 1.2em;
+  color: white;
+}
+
+.ofertas{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end:   3;
+  display: flex;
+  background-image: url("./components/recursos/nabo.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.granja{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  background-image: url("./components/recursos/granja.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.delacasa{
+  grid-column: 4/5;
+  grid-row: 1/3;
+  display: flex;
+  background-image: url("./components/recursos/freezcasa.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;}
+.verduleria{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  background-image: url("./components/recursos/espinaca.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;}
+.bebidas{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  background-image: url("./components/recursos/bebidas.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;}
+.congelados{
+  grid-column: 3/5;
+  grid-row: 3/4;
+  display: flex;
+  background-image: url("./components/recursos/freezer.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
