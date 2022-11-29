@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import ItemList from "./components/ItemList";
+import ItemListContainer from "./components/ItemListContainer";
 
 const App = () => {
   return(
   <div>
     <Navbar />
-    <ItemList 
+    <ItemListContainer 
     titulo="Inicio"/>
   </div>
   )

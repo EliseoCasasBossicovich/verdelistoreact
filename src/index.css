@@ -33,8 +33,11 @@ background-position: top;
 }
 .header__pedidos{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
+.header__lista{
+  display: flex;
+} 
 .header__pedidos--ico{
   width: 43px;
   height: 45px;
@@ -51,6 +54,7 @@ background-position: top;
   background-color: rgb(1, 146, 1);
   font-weight: 600;
 }
+
 .header__categoria--font{
   color: black;
 }

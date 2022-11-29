@@ -1,4 +1,4 @@
-const ItemList = ({titulo}) =>{
+const ItemListContainer = ({titulo}) =>{
     return (
         <div>
             <div>
@@ -29,4 +29,4 @@ const ItemList = ({titulo}) =>{
         // fin section categorias
     );
 }
-export default ItemList;
+export default ItemListContainer;
