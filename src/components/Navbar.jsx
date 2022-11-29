@@ -1,5 +1,5 @@
 import CartPedido from "./CartWidget.jsx";
-import headerLogo from "./recursos/logovd.png";
+import headerLogo from "../recursos/logovd.png";
 
 const Navbar = () =>{
     

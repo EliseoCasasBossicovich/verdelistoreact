@@ -1,4 +1,4 @@
-import iconopedido from "./recursos/pedido.svg";
+import iconopedido from "../recursos/pedido.svg";
 
 const CartPedido = () =>{
     return(
