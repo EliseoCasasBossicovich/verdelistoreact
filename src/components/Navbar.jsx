@@ -1,12 +1,15 @@
 import CartPedido from "./CartWidget.jsx";
 import headerLogo from "../recursos/logovd.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () =>{
     
     return(
         <nav className="header">
             {/* logo*/}
-            <a href="index.html"><img className="header__lista--logo" alt="VerdeListo" src={headerLogo}/></a>
+            <Link to = '/'>
+            <img className="header__lista--logo" alt="VerdeListo" src={headerLogo}/>
+            </Link>
             {/* fin logo */}
             <nav className="navbar navbar-expand-lg header__nav color-header">
                 <div className="container-fluid header__cont">
@@ -29,12 +32,18 @@ const Navbar = () =>{
                                 Categorias
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a className="dropdown-item" href="paginas/ofertas.html">Ofertas</a></li>
-                                    <li><a className="dropdown-item" href="paginas/delacasa.html">De la Casa</a></li>
-                                    <li><a className="dropdown-item" href="paginas/verduleria.html">Verdulería</a></li>
-                                    <li><a className="dropdown-item" href="paginas/granja.html">Granja</a></li>
-                                    <li><a className="dropdown-item" href="paginas/bebidas.html">Bebidas</a></li>
-                                    <li><a className="dropdown-item" href="paginas/congelados.html">Congelados</a></li>
+                                    <Link to ='ofertas'><li className="dropdown-item">Ofertas</li></Link>
+                                    <Link to ='delacasa'><li className="dropdown-item">De la Casa</li></Link>
+                                    <Link to ='verduleria'><li className="dropdown-item">Verdulería</li></Link>
+                                    <Link to ='granja'><li className="dropdown-item">Granja</li></Link>
+                                    <Link to ='bebidas'><li className="dropdown-item">Bebidas</li></Link>
+                                    <Link to ='congelados'><li className="dropdown-item">Congelados</li></Link>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                 </ul>
                             </li>
                         </ul>
