@@ -1,0 +1,58 @@
+[
+    {
+        "id": "decasa1",
+        "name": "Empanadas de Verdura",
+        "price": 400,
+        "description": "4 Empanadas de verdura",
+        "img": "https://drive.google.com/file/d/1yHJRt4Rf5ESifEGoyLVbMw5-eGk0A2m8/view?usp=sharing",
+        "category": "De la Casa"
+    },
+    {
+        "id": "decasa2",
+        "name": "Empanadas de Pollo",
+        "price": 400,
+        "description": "4 Empanadas de pollo",
+        "img": "https://drive.google.com/file/d/1yHJRt4Rf5ESifEGoyLVbMw5-eGk0A2m8/view?usp=sharing",
+        "category": "De la Casa"
+    },
+    {
+        "id": "decasa3",
+        "name": "Empandas de Carne",
+        "price": 450,
+        "description": "4 Empanadas de carne",
+        "img": "https://drive.google.com/file/d/1yHJRt4Rf5ESifEGoyLVbMw5-eGk0A2m8/view?usp=sharing",
+        "category": "De la Casa"
+    },
+    {
+        "id": "decasa4",
+        "name": "Empanadas de Humita",
+        "price": 400,
+        "description": "4 Empanadas de Humita",
+        "img": "https://drive.google.com/file/d/1yHJRt4Rf5ESifEGoyLVbMw5-eGk0A2m8/view?usp=sharing",
+        "category": "De la Casa"
+    },
+    {
+        "id": "decasa5",
+        "name": "Canelones de Carne",
+        "price": 650,
+        "description": "3 Canelones de carne",
+        "img": "https://drive.google.com/file/d/1fxwVU0-uDO1PmSIqQoqMhpvl6k1RJe9s/view?usp=share_link",
+        "category": "De la Casa"
+    },
+    {
+        "id": "decasa6",
+        "name": "Canelones de Verdura",
+        "price": 650,
+        "description": "3 Canelones de Verdura",
+        "img": "https://drive.google.com/file/d/1fxwVU0-uDO1PmSIqQoqMhpvl6k1RJe9s/view?usp=share_link",
+        "category": "De la Casa"
+    },
+    {
+        "id": "decasa7",
+        "name": "Canelones de Pollo",
+        "price": 650,
+        "description": "3 Canelones de Pollo",
+        "img": "https://drive.google.com/file/d/1fxwVU0-uDO1PmSIqQoqMhpvl6k1RJe9s/view?usp=share_link",
+        "category": "De la Casa"
+    }
+]
