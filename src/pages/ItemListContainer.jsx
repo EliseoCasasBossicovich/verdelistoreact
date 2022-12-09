@@ -1,9 +1,19 @@
-const ItemListContainer = ({titulo}) =>{
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import ItemList from "./ItemList";
+import Data from "../productos.json";
+
+const ItemListContainer = () =>{
+    const [productos, setProductos] = useState([]);
+    const { categoriaId } = useParams();
+    useEffect(() => {
+    const FiltrarProductos = Data.filter((item) => {
+        return item.categoria === categoriaId || categoriaId === undefined;
+    });
+    setProductos(FiltrarProductos);
+    }, [categoriaId]);
     return (
         <div>
-            <div>
-                <h1>{titulo}</h1>
-            </div>
             {/* // section categorias */}
             <section className="categorias__grid">
                 <article className="ofertas">
@@ -24,6 +34,10 @@ const ItemListContainer = ({titulo}) =>{
                 <article className="congelados">
                     <a href="paginas/congelados.html"><button className="categorias__boton">Congelados</button></a>
                 </article>
+            </section>
+            <section>
+                <h1>{categoriaId}</h1>
+                <ItemList productos={productos}/>
             </section>
         </div>
         // fin section categorias

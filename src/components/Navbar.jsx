@@ -32,18 +32,24 @@ const Navbar = () =>{
                                 Categorias
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <Link to ='ofertas'><li className="dropdown-item">Ofertas</li></Link>
-                                    <Link to ='delacasa'><li className="dropdown-item">De la Casa</li></Link>
-                                    <Link to ='verduleria'><li className="dropdown-item">Verdulería</li></Link>
-                                    <Link to ='granja'><li className="dropdown-item">Granja</li></Link>
-                                    <Link to ='bebidas'><li className="dropdown-item">Bebidas</li></Link>
-                                    <Link to ='congelados'><li className="dropdown-item">Congelados</li></Link>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
+                                    <Link to ='/categoria/ofertas'>
+                                        <li className="dropdown-item">Ofertas</li>
+                                        </Link>
+                                    <Link to ='/categoria/delacasa'>
+                                        <li className="dropdown-item">De la Casa</li>
+                                        </Link>
+                                    <Link to ='/categoria/verduleria'>
+                                        <li className="dropdown-item">Verdulería</li>
+                                        </Link>
+                                    <Link to ='/categoria/granja'>
+                                        <li className="dropdown-item">Granja</li>
+                                    </Link>
+                                    <Link to ='/categoria/bebidas'>
+                                        <li className="dropdown-item">Bebidas</li>
+                                    </Link>
+                                    <Link to ='/categoria/congelados'>
+                                        <li className="dropdown-item">Congelados</li>
+                                    </Link>
                                 </ul>
                             </li>
                         </ul>
