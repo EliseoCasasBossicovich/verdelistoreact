@@ -4,27 +4,19 @@ import ItemDetail from "../components/ItemDetail";
 import Data from "../productos.json";
 
 function ItemDetailContainer() {
-const [productos, setProductos] = useState([]);
+const [productos, setProductos] = useState([{}]);
 const { itemId } = useParams();
 
 useEffect(() => {
-    const FiltrarProductos = Data.filter((item) => {
-    return item.name === itemId;
+    const getProductos = new Promise(resolve => {
+        setTimeout(() => {
+            resolve(Data)
+        }, 20000);
     });
-    setProductos(FiltrarProductos);
-}, [itemId]);
-return (
-    <div>
-    {productos.map((item) => (
-        <ItemDetail
-        name={item.name}
-        price={item.price}
-        img={item.img}
-        description={item.description}
-        />
-    ))}
-    </div>
-);
+    getProductos.then(res => setProductos(res.find(item => item.id === parseInt(itemId))));
+}, [itemId])
+    return(
+        <ItemDetail productos={productos}/>
+    )
 }
-
 export default ItemDetailContainer;
