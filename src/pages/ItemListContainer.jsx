@@ -1,25 +1,27 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import ItemList from "./ItemList";
+// import ItemList from "./ItemList";
 import Data from "../productos.json";
 import { Link } from "react-router-dom";
+import ItemDetail from "../components/ItemDetail";
 
 const ItemListContainer = () =>{
     const [productos, setProductos] = useState([]);
-    const { categoryId } = useParams();
+    const { id } = useParams();
     useEffect(() => {
     const getProductos = new Promise(resolve => {
         setTimeout(() => {
             resolve(Data)
         }, 1000);
     });
-        if (categoryId) {
-            getProductos.then(res => setProductos(res.filter(productos => productos.category === categoryId)));    
+        if (id) {
+            getProductos.then(res => 
+                setProductos(res.filter((productos) => productos.id === id)));    
         } else {
-        getProductos.then(res => setProductos(res))
+        getProductos.then((res) => setProductos(res))
         }
-    }, [categoryId])
-    
+    }, [id])
+    // console.log(productos);
     return (
         <div>
             {/* // section categorias */}
@@ -56,8 +58,13 @@ const ItemListContainer = () =>{
                 </article>
             </section>
             <section>
-                <h1>{categoryId}</h1>
-                <ItemList productos={productos}/>
+                <h1>{id}</h1>
+                {/* <ItemList productos={productos}/> */}
+            </section>
+            <section className="row">
+{productos.map((producto) => {
+                    return <ItemDetail key={producto.id} data ={producto} />
+                })}
             </section>
         </div>
         // fin section categorias

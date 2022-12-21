@@ -4,6 +4,7 @@ import ItemListContainer from "./pages/ItemListContainer";
 import ItemDetailContainer from "./pages/ItemDetailContainer";
 // Componentes
 import Navbar from "./components/Navbar";
+import ProductList from "./components/ProductList";
 
 // Desarrollo
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/item/:id" element={<ItemDetailContainer/>}/>
       </Routes>
     </BrowserRouter>
+    <ProductList/>
   </div>
   )
 }

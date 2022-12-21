@@ -9,5 +9,5 @@ const ItemList = ({ productos }) =>{
     </section>
     );
 }
-
+// console.log(Item)
 export default ItemList;

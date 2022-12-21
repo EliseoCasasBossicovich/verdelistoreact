@@ -11,7 +11,7 @@ useEffect(() => {
     const getProductos = new Promise(resolve => {
         setTimeout(() => {
             resolve(Data)
-        }, 20000);
+        }, 2000);
     });
     getProductos.then(res => setProductos(res.find(item => item.id === parseInt(itemId))));
 }, [itemId])

@@ -3,7 +3,7 @@ const Item =({name, img ,price, id}) =>{
     return (
         <article className="card productos__listado" style={{width: "18rem"}}>
             <img link={img} className="card-img-top" alt={name}/>
-        <div class="card-body">
+        <div className="card-body">
             <h5 className="card-title">{name}</h5>
             <p className="card-text">{price}</p>
             <Link to={`/item/${id}`}>
@@ -13,4 +13,5 @@ const Item =({name, img ,price, id}) =>{
     </article>
     );
 }
+console.log(Item)
 export default Item;
