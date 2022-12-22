@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-// import ItemList from "./ItemList";
 import Data from "../productos.json";
 import { Link } from "react-router-dom";
-// import ItemDetail from "../components/ItemDetail";
 import ItemList from "../components/ItemList";
 
 const ItemListContainer = () =>{
