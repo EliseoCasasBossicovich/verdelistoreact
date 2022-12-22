@@ -6,7 +6,7 @@
         "description": "4 Empanadas de verdura",
         "img": "https://drive.google.com/file/d/1yHJRt4Rf5ESifEGoyLVbMw5-eGk0A2m8/view?usp=sharing",
         
-        "category": "De la Casa"
+        "category": "empanadas"
     },
     {
         "id": "decasa2",
@@ -14,7 +14,7 @@
         "price": 400,
         "description": "4 Empanadas de pollo",
         "img": "https://drive.google.com/file/d/1yHJRt4Rf5ESifEGoyLVbMw5-eGk0A2m8/view?usp=sharing",
-        "category": "De la Casa"
+        "category": "empanadas"
     },
     {
         "id": "decasa3",
@@ -22,7 +22,7 @@
         "price": 450,
         "description": "4 Empanadas de carne",
         "img": "https://drive.google.com/file/d/1yHJRt4Rf5ESifEGoyLVbMw5-eGk0A2m8/view?usp=sharing",
-        "category": "De la Casa"
+        "category": "empanadas"
     },
     {
         "id": "decasa4",
@@ -30,7 +30,7 @@
         "price": 400,
         "description": "4 Empanadas de Humita",
         "img": "https://drive.google.com/file/d/1yHJRt4Rf5ESifEGoyLVbMw5-eGk0A2m8/view?usp=sharing",
-        "category": "De la Casa"
+        "category": "empanadas"
     },
     {
         "id": "decasa5",
@@ -38,7 +38,7 @@
         "price": 650,
         "description": "3 Canelones de carne",
         "img": "https://drive.google.com/file/d/1fxwVU0-uDO1PmSIqQoqMhpvl6k1RJe9s/view?usp=share_link",
-        "category": "De la Casa"
+        "category": "canelones"
     },
     {
         "id": "decasa6",
@@ -46,7 +46,7 @@
         "price": 650,
         "description": "3 Canelones de Verdura",
         "img": "https://drive.google.com/file/d/1fxwVU0-uDO1PmSIqQoqMhpvl6k1RJe9s/view?usp=share_link",
-        "category": "De la Casa"
+        "category": "canelones"
     },
     {
         "id": "decasa7",
@@ -54,6 +54,6 @@
         "price": 650,
         "description": "3 Canelones de Pollo",
         "img": "https://drive.google.com/file/d/1fxwVU0-uDO1PmSIqQoqMhpvl6k1RJe9s/view?usp=share_link",
-        "category": "De la Casa"
+        "category": "canelones"
     }
 ]
