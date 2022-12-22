@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 // import ItemList from "./ItemList";
 import Data from "../productos.json";
 import { Link } from "react-router-dom";
-import ItemDetail from "../components/ItemDetail";
+// import ItemDetail from "../components/ItemDetail";
+import ItemList from "../components/ItemList";
 
 const ItemListContainer = () =>{
     const [productos, setProductos] = useState([]);
@@ -62,12 +63,11 @@ const ItemListContainer = () =>{
                 {/* <ItemList productos={productos}/> */}
             </section>
             <section className="row">
-{productos.map((producto) => {
-                    return <ItemDetail key={producto.id} data ={producto} />
-                })}
+                <ItemList productos={productos}/>
             </section>
         </div>
         // fin section categorias
     );
 }
 export default ItemListContainer;
+

@@ -3,9 +3,10 @@ import { useParams } from "react-router-dom";
 import ItemDetail from "../components/ItemDetail";
 import Data from "../productos.json";
 
+
 function ItemDetailContainer() {
-const [productos, setProductos] = useState([{}]);
-const { itemId } = useParams();
+const [producto, setProducto] = useState({});
+const { id } = useParams();
 
 useEffect(() => {
     const getProductos = new Promise(resolve => {
@@ -13,10 +14,32 @@ useEffect(() => {
             resolve(Data)
         }, 2000);
     });
-    getProductos.then(res => setProductos(res.find(item => item.id === parseInt(itemId))));
-}, [itemId])
+    getProductos.then(res => setProducto(res.find(item => item.id === id)));
+}, [id])
     return(
-        <ItemDetail productos={productos}/>
+        <ItemDetail producto={producto}/>
     )
 }
 export default ItemDetailContainer;
+// import { useState, useEffect } from "react";
+// import { useParams } from "react-router-dom";
+// import ItemDetail from "../components/ItemDetail";
+// import Data from "../productos.json";
+
+// function ItemDetailContainer() {
+// const [productos, setProductos] = useState([{}]);
+// const { itemId } = useParams();
+
+// useEffect(() => {
+//     const getProductos = new Promise(resolve => {
+//         setTimeout(() => {
+//             resolve(Data)
+//         }, 2000);
+//     });
+//     getProductos.then(res => setProductos(res.find(item => item.id === parseInt(itemId))));
+// }, [itemId])
+//     return(
+//         <ItemDetail Data={productos}/>
+//     )
+// }
+// export default ItemDetailContainer;
